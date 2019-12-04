@@ -1,91 +1,148 @@
-  .header-bar {
-      background-color: white;
-      width: 100%;
-      display: inline-block;
-  }
-  
-  .container {
-    width: 960px;
-    display: inline-block;
-  }
-  
-  a:link {
-    text-decoration: none;
-  }
 
-  a:visited {
-    text-decoration: none;
-  }
-
-  header {
-   
-    background-color: #7ebca5;
-    color: white;
-    padding: 20px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 20px;
-    float: left;
-  }
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  nav {
-    color: #DDDDDD;
-    float: right;
-    font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 16px; 
-    vertical-align: middle;
-
-  }
-
-.main {
-
-background: url("/assets/images/embossed-diamond.png");
+body{
+  margin: 0;
+  background: url("../images/embossed-diamond.png");
+}
+.header-bar {
+background-color: white;
+width: 100%;
+display: inline-block;
+margin-bottom: 50px;
+border-bottom: 2px solid #DDDDDD;
+}
+.content input {
+width: 100%;
 
 }
-.background-image {
-  position: absolute;
-  z-index: -1;
+.content textarea {
+width: 100%;
 }
-.me-pic{
-  padding: 20px 20px 20px 0px;
-  float: left;
+.content label {
+  color: lightslategrey;
 }
 
-.me-paragraph{
-  
-  word-wrap: break-word;
-
-}
-.content-header {
-  border-bottom: 2px solid #dddddd;
-  width: 100%;
-  height: 50px;
-  color: #7ebca5;
-  font-weight: 600;
-  font-size: 20px;
-}
-.content {
-  width: 100%;
-  min-height: 100%;
+.submit 
+{ 
+  background-color: #7ebca5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+.container {
+background-color: #ffffff;
+width: 960px;
+display: inline-block;
+margin: auto;
+
+}
+
+header{
+background-color: #7ebca5;
+color: white;
+padding: 20px;
+font-size: 20px;
+float: left;
+font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar{
+overflow: hidden;
+background-color: #ffffff;
+position: fixed;
+top: 0;
+width: 100%;
+text-align: center;
+}
+
+.navbar a{
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover{
+background: #ddd;
+color: black;
+}
+
+a:link {
+text-decoration: none;
+}
+
+​a:visited {
+text-decoration: none;
+}
+
+nav {
+color: #DDDDDD;
+float: right;
+font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+font-size: 16px;
+vertical-align: middle;
+}
+
+.main{
+  padding: 16px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.background-image {
+position: absolute;
+z-index: -1;
+}
+
+.me-pic {
+padding: 20px 20px 20px 0px;
+float: left;
+}
+
+​.me-paragraph {
+word-wrap: break-word;
+}
+
+.content-header {
+border-bottom: 2px solid #dddddd;
+width: 100%;
+height: 50px;
+color: #7ebca5;
+font-weight: 600;
+font-size: 20px;
+}
+
+.content {  
+width: 100%;
+display: inline-block;
+}
+
+
 .content-container {
-  padding: 20px;
-  z-index: 1;
-  background-color: white;
-  padding-bottom: 50px;
-  
+padding: 20px;
+z-index: 1;
+background-color: white;
+padding-bottom: 100px;
+text-align: start;
+border: 1px solid lightgray;
+
 }
+
 .footer {
-    background-color:#666666;
-    width: 1000px;
-    height: 50px;
-    margin-top: -50px;
-    border: 1px solid #4AAAA5;
-    display: inline-block;
-  }
+background-color: #666666;
+border-top: 5px solid #4AAAA5;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
